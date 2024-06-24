@@ -8,6 +8,7 @@ Faire `php -S localhost:8080` dans le dossier xss-cesi
 Puis aller sur : http://localhost:8080/easy-level.php
 
 Les logs se trouvent dans le fichier log.php. Le but du jeu est de réussir à obtenir les logs uniquement via le navigateur, sans outils supplémentaires.
+Il est possible d'examiner les fichiers php seulement via PHPStorm ou Vim. Interdit tout autre solution.  
 
 
 ### Question 1 - **easy-level.php**
