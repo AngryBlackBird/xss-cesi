@@ -9,8 +9,7 @@ if ($_SERVER['HTTP_HOST'] !== 'localhost') {
     die("Accès non autorisé.");
 }
 
-const LOGGING = 'ADMIN';
-const PASSWORD = 'ADMIN';
+include 'log.php';
 // Définir le contenu du fichier texte
 $content = "log : $this->LOGGING.\nmdp :$this->PASSWORD";
 // Définir le nom du fichier texte

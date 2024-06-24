@@ -23,12 +23,12 @@
                 <center>
                     <form action="easy-level-2.php" method="POST">
                         <div class="mdl-textfield mdl-js-textfield">
-                            <input class="mdl-textfield__input" maxlength="10" name="pseudo" type="text" id="pseudo">
+                            <input class="mdl-textfield__input" maxlength="20" name="pseudo" type="text" id="pseudo">
                             <label class="mdl-textfield__label" for="pseudo">Pseudo</label>
                         </div>
                         <br>
                         <div class="mdl-textfield mdl-js-textfield">
-                            <input class="mdl-textfield__input" maxlength="10" name="mdp" type="text" id="mdp">
+                            <input class="mdl-textfield__input" maxlength="20" name="mdp" type="text" id="mdp">
                             <label class="mdl-textfield__label" for="mdp">Mdp</label>
                         </div>
                         <div>
@@ -50,8 +50,7 @@
                             $mdp = $_POST['mdp'];
 
                         if (isset($_POST['pseudo']) || isset($_POST['mdp'])) {
-                            $result = $pseudo;
-                            echo 'Connection via  :' . $result . '<br>';
+                            echo 'Connection via  :' . $pseudo . '<br>';
                             if ($pseudo === LOGGING && $mdp === PASSWORD) {
                                 echo 'Connexion réussie. Bonjour, ' . $pseudo;
                             } else {

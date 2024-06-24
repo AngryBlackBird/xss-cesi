@@ -48,8 +48,7 @@
                             $mdp = $_POST['mdp'];
 
                         if (isset($_POST['pseudo']) || isset($_POST['mdp'])) {
-                            $result = $pseudo;
-                            echo 'Connection via  :' . $result . '<br>';
+                            echo 'Connection via  :' . $pseudo . '<br>';
                             if ($pseudo === LOGGING && $mdp === PASSWORD) {
                                 echo 'Connexion réussie. Bonjour, ' . $pseudo;
                             } else {
