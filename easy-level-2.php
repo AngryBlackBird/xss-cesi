@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <title>Les failles XSS</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.icon-icons.com/icons2/1857/PNG/512/hacker_117746.png">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-red.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
@@ -28,13 +29,13 @@
                         </div>
                         <br>
                         <div class="mdl-textfield mdl-js-textfield">
-                            <input class="mdl-textfield__input" maxlength="20" name="mdp" type="text" id="mdp">
+                            <input class="mdl-textfield__input" maxlength="20" name="mdp" type="password" id="mdp">
                             <label class="mdl-textfield__label" for="mdp">Mdp</label>
                         </div>
                         <div>
                             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
                                     type="submit">
-                                Button
+                                Login
                             </button>
                             <div style="margin-top: 20px;">
                             </div>

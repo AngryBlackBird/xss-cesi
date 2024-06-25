@@ -1,29 +1,20 @@
 <?php
 // download.php
 
-// Vérifiez si la requête est une requête AJAX
+// Vérifie si la requête est une requête AJAX
 if (!isset($_SERVER['HTTP_X_REQUESTED_WITH']) || strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) !== 'xmlhttprequest') {
     die("Accès non autorisé.");
 }
-if ($_SERVER['HTTP_HOST'] !== 'localhost') {
+// Vérifie si la requête provient du même host
+if ($_SERVER['HTTP_HOST'] !== 'localhost:8080') {
     die("Accès non autorisé.");
 }
 
-include 'log.php';
-// Définir le contenu du fichier texte
-$content = "log : $this->LOGGING.\nmdp :$this->PASSWORD";
-// Définir le nom du fichier texte
+
+include './log.php';
+$content = "log : ".LOGGING."\nmdp : ".PASSWORD;
 $fileName = "log.txt";
 
-// En-têtes pour forcer le téléchargement
-header('Content-Description: File Transfer');
-header('Content-Type: text/plain');
-header('Content-Disposition: attachment; filename="' . $fileName . '"');
-header('Expires: 0');
-header('Cache-Control: must-revalidate');
-header('Pragma: public');
-header('Content-Length: ' . strlen($content));
 
-// Envoyer le contenu du fichier
 echo $content;
 exit;
